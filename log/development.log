@@ -283,3 +283,97 @@ Processing PostsController#show (for 127.0.0.1 at 2010-02-12 11:23:31) [GET]
 Rendering template within layouts/application
 Rendering posts/show
 Completed in 64ms (View: 5, DB: 1) | 200 OK [http://localhost/posts/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-02-12 11:27:54) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Post without an ID):
+  app/controllers/posts_controller.rb:7:in `show'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /opt/local/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /opt/local/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (30.8ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-02-12 11:28:02) [GET]
+  [4;36;1mPost Load (1.4ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 35ms (View: 30, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-02-12 11:28:26) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (3.9ms)
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-02-12 11:28:28) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-02-12 11:28:30) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (3.2ms)
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-02-12 11:28:32) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2010-02-12 11:28:36) [GET]
+Rendering template within layouts/application
+Rendering posts/new
+Rendered posts/_form (3.2ms)
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/posts/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-02-12 11:28:38) [GET]
+  [4;35;1mPost Load (1.2ms)[0m   [0mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-02-12 11:29:49) [GET]
+  [4;36;1mPost Load (1.2ms)[0m   [0;1mSELECT * FROM "posts" [0m
+Rendering template within layouts/application
+Rendering posts/index
+Completed in 33ms (View: 28, DB: 1) | 200 OK [http://localhost/]
